@@ -28,7 +28,7 @@ A simple, fast port scanner written in Python that scans the first 1024 ports of
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/analyzeCS/portxy.git
+git clone https://github.com/analyzeCS/porty.git
 cd porty
 ```
 
@@ -46,7 +46,7 @@ python porty.py
 
 2. Enter the IP address to scan:
 ```
-Enter the IP adress you want to scan: 192.168.1.1
+Enter the IP address you want to scan: 192.168.1.1
 ```
 
 3. Wait for the scan results:
@@ -65,17 +65,17 @@ Scan complete.
 **Scan local network:**
 ```bash
 # Example: Scan router
-Enter the IP adress you want to scan: 192.168.1.1
+Enter the IP address you want to scan: 192.168.1.1
 ```
 
 **Scan localhost:**
 ```bash
-Enter the IP adress you want to scan: localhost
+Enter the IP address you want to scan: localhost
 ```
 
 **Scan external IP:**
 ```bash
-Enter the IP adress you want to scan: 8.8.8.8
+Enter the IP address you want to scan: 8.8.8.8
 ```
 
 ## How It Works
@@ -103,7 +103,7 @@ The scanner uses TCP socket connections to check if ports are open:
 ⚠️ **IMPORTANT:** This tool should only be used for legal purposes!
 
 - Only scan systems for which you have explicit permission
-- Scanning foreign systems without authorization is illegal in many countries
+- Scanning systems without authorization is illegal in many countries
 - Use this tool only for educational purposes or on your own systems
 - The author assumes no liability for misuse
 
