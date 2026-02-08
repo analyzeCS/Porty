@@ -1,19 +1,44 @@
-# Port Scanner
+# Porty
 
-This is a simple port scanner written in Python, named `port_scanner.py`. It scans the ports from 1 to 1024 on a specified IP address while establishing socket connections with a timeout of 0.5 seconds. 
+## Overview
+Porty is a versatile tool that includes a port scanner and a speedtest utility. This repository encompasses two main scripts:
 
-## Features
-- Scans ports 1-1024
-- 0.5 second timeout for socket connections
-- Displays a cool ASCII banner
-- Takes user input for target IP address
+1. **Port Scanner (`port_scanner.py`)**
+2. **Speedtest Utility (`speedtest.py`)**
 
-## Usage
-Simply run the script and provide the target IP address when prompted. The scanner will check the specified ports and report if they are open or closed.
+## Table of Contents
+- [Port Scanner](#port-scanner)
+- [Speedtest Utility](#speedtest-utility)
+- [Usage](#usage)
+- [License](#license)
 
-## Example
+## Port Scanner
+The port scanner is a Python script designed to scan a specified host for open ports.
+
+### Features:
+- Supports TCP and UDP scanning.
+- Customizable port range.
+- Provides a detailed report of open ports.
+
+### Usage:
 ```bash
-python port_scanner.py
+python port_scanner.py [hostname] [start_port] [end_port]
 ```
 
-Follow the prompts to scan the desired IP address!
+## Speedtest Utility
+The speedtest utility allows you to measure your internet connection speed and stability.
+
+### Features:
+- Measures download and upload speeds.
+- Provides ping results.
+
+### Usage:
+```bash
+python speedtest.py
+```
+
+## Usage
+To use these tools, ensure that you have Python installed on your system. Clone the repository and run the desired script as explained above.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
