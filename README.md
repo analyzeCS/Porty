@@ -1,30 +1,19 @@
-# Porty
+# Port Scanner
 
-## Description
-Porty is a fast and efficient port scanner designed to help network administrators and security professionals identify open ports and services running on networked devices.
+This is a simple port scanner written in Python, named `port_scanner.py`. It scans the ports from 1 to 1024 on a specified IP address while establishing socket connections with a timeout of 0.5 seconds. 
 
 ## Features
-- Fast scanning using asynchronous techniques.
-- Scan multiple IP addresses simultaneously.
-- Customizable scan options including port ranges and protocols.
-- Detailed output formats (text, JSON).
-
-## Installation
-```bash
-# Install dependencies
-pip install -r requirements.txt
-```
+- Scans ports 1-1024
+- 0.5 second timeout for socket connections
+- Displays a cool ASCII banner
+- Takes user input for target IP address
 
 ## Usage
+Simply run the script and provide the target IP address when prompted. The scanner will check the specified ports and report if they are open or closed.
+
+## Example
 ```bash
-# Basic usage
-python porty.py -t <target_ip>
+python port_scanner.py
 ```
 
-## Requirements
-- Python 3.6+
-- Scapy library
-- Asyncio library
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Follow the prompts to scan the desired IP address!
