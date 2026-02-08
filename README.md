@@ -29,19 +29,19 @@ A simple, fast port scanner written in Python that scans the first 1024 ports of
 1. Clone the repository:
 ```bash
 git clone https://github.com/analyzeCS/portxy.git
-cd portxy
+cd porty
 ```
 
 2. Run the script:
 ```bash
-python portxy.py
+python porty.py
 ```
 
 ## Usage
 
 1. Start the script:
 ```bash
-python portxy.py
+python porty.py
 ```
 
 2. Enter the IP address to scan:
