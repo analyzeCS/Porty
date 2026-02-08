@@ -9,47 +9,47 @@
 ###         ########  ###    ###    ###        ###    
 ```
 
-Ein einfacher, schneller Port-Scanner geschrieben in Python, der die ersten 1024 Ports einer Ziel-IP-Adresse scannt.
+A simple, fast port scanner written in Python that scans the first 1024 ports of a target IP address.
 
 ## Features
 
-- 🔍 Scannt Ports 1-1024
-- ⚡ Schnelle Scan-Geschwindigkeit mit Socket-Timeouts
-- 🎨 Animierte Scan-Anzeige
-- 💻 Cross-Platform (Windows, Linux, macOS)
-- 🎯 Einfache Bedienung
+- 🔍 Scans ports 1-1024
+- ⚡ Fast scanning speed with socket timeouts
+- 🎨 Animated scanning display
+- 💻 Cross-platform (Windows, Linux, macOS)
+- 🎯 Easy to use
 
-## Voraussetzungen
+## Requirements
 
 - Python 3.x
-- Keine externen Bibliotheken erforderlich (nutzt nur Python Standard-Library)
+- No external libraries required (uses only Python Standard Library)
 
 ## Installation
 
-1. Repository klonen:
+1. Clone the repository:
 ```bash
 git clone https://github.com/analyzeCS/portxy.git
 cd portxy
 ```
 
-2. Script ausführen:
+2. Run the script:
 ```bash
 python portxy.py
 ```
 
 ## Usage
 
-1. Starte das Script:
+1. Start the script:
 ```bash
 python portxy.py
 ```
 
-2. Gib die zu scannende IP-Adresse ein:
+2. Enter the IP address to scan:
 ```
 Enter the IP adress you want to scan: 192.168.1.1
 ```
 
-3. Warte auf die Scan-Ergebnisse:
+3. Wait for the scan results:
 ```
 / Scanning ports... 
 
@@ -60,32 +60,32 @@ Port 443 is open
 Scan complete.
 ```
 
-## Beispiele
+## Examples
 
-**Lokales Netzwerk scannen:**
+**Scan local network:**
 ```bash
-# Beispiel: Router scannen
+# Example: Scan router
 Enter the IP adress you want to scan: 192.168.1.1
 ```
 
-**Localhost scannen:**
+**Scan localhost:**
 ```bash
 Enter the IP adress you want to scan: localhost
 ```
 
-**Externe IP scannen:**
+**Scan external IP:**
 ```bash
 Enter the IP adress you want to scan: 8.8.8.8
 ```
 
-## Funktionsweise
+## How It Works
 
-Der Scanner nutzt TCP-Socket-Verbindungen, um zu überprüfen, ob Ports offen sind:
-- **Timeout:** 0.5 Sekunden pro Port
-- **Scan-Bereich:** Ports 1-1024 (Well-known Ports)
-- **Methode:** TCP Connect Scan
+The scanner uses TCP socket connections to check if ports are open:
+- **Timeout:** 0.5 seconds per port
+- **Scan range:** Ports 1-1024 (Well-known ports)
+- **Method:** TCP Connect Scan
 
-## Häufig offene Ports
+## Common Open Ports
 
 | Port | Service |
 |------|---------|
@@ -98,56 +98,49 @@ Der Scanner nutzt TCP-Socket-Verbindungen, um zu überprüfen, ob Ports offen si
 | 3306 | MySQL   |
 | 3389 | RDP     |
 
-## Rechtliche Hinweise
+## Legal Notice
 
-⚠️ **WICHTIG:** Dieses Tool darf nur für legale Zwecke verwendet werden!
+⚠️ **IMPORTANT:** This tool should only be used for legal purposes!
 
-- Scanne nur Systeme, für die du eine ausdrückliche Genehmigung hast
-- Das Scannen fremder Systeme ohne Erlaubnis ist in vielen Ländern illegal
-- Nutze dieses Tool nur zu Bildungszwecken oder für eigene Systeme
-- Der Autor übernimmt keine Haftung für missbräuchliche Verwendung
+- Only scan systems for which you have explicit permission
+- Scanning foreign systems without authorization is illegal in many countries
+- Use this tool only for educational purposes or on your own systems
+- The author assumes no liability for misuse
 
-## Limitierungen
+## Limitations
 
-- Scannt nur die ersten 1024 Ports
-- Kein UDP-Support
-- Keine Service-Erkennung
-- Einfacher TCP Connect Scan (kann von Firewalls/IDS erkannt werden)
+- Only scans the first 1024 ports
+- No UDP support
+- No service detection
+- Simple TCP Connect Scan (can be detected by firewalls/IDS)
 
-## Geplante Features
+## Planned Features
 
-- [ ] Erweiterter Port-Bereich (custom range)
-- [ ] Multi-Threading für schnellere Scans
-- [ ] Service-Erkennung
-- [ ] Export der Ergebnisse (JSON/CSV)
-- [ ] UDP-Port-Scanning
-- [ ] Banner-Grabbing
+- [ ] Extended port range (custom range)
+- [ ] Multi-threading for faster scans
+- [ ] Service detection
+- [ ] Export results (JSON/CSV)
+- [ ] UDP port scanning
+- [ ] Banner grabbing
 
 ## Troubleshooting
 
 **Problem:** "You must enter an IP address to scan."
-- **Lösung:** Gib eine gültige IP-Adresse oder "localhost" ein
+- **Solution:** Enter a valid IP address or "localhost"
 
-**Problem:** Keine offenen Ports gefunden
-- **Lösung:** 
-  - Überprüfe die IP-Adresse
-  - Firewall könnte Scans blockieren
-  - Ziel-Host könnte offline sein
+**Problem:** No open ports found
+- **Solution:** 
+  - Check the IP address
+  - Firewall might be blocking scans
+  - Target host might be offline
 
-**Problem:** Script hängt beim Scannen
-- **Lösung:** Timeout-Wert in `s.settimeout(0.5)` anpassen
+**Problem:** Script hangs while scanning
+- **Solution:** Adjust timeout value in `s.settimeout(0.5)`
 
-## Kontakt
+## License
 
-**Made by Attack**
-
-- Telegram: [t.me/mumbus200](https://t.me/mumbus200)
-- GitHub: [github.com/analyzeCS](https://github.com/analyzeCS)
-
-## Lizenz
-
-Dieses Projekt ist für Bildungszwecke gedacht. Bitte nutze es verantwortungsvoll.
+This project is intended for educational purposes. Please use it responsibly.
 
 ---
 
-⭐ Wenn dir dieses Projekt gefällt, gib ihm einen Star auf GitHub!
+⭐ If you like this project, give it a star on GitHub!
